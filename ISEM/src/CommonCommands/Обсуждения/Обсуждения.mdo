@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba51c7f5-0074-4c99-a27d-ddfd4bfcc068">
+  <name>Обсуждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обсуждения</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Conversations</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>CatalogRef.Пользователи</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Начать обсуждение с пользователем</value>
+  </toolTip>
+  <toolTip>
+    <key>en</key>
+    <value>Start a conversation with a user</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Комментарий</picture>
+  </picture>
+</mdclass:CommonCommand>

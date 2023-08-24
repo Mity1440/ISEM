@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c2e35a8-d05d-4e52-baee-a1e13585c502">
+  <name>СостояниеРассылкиОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние рассылки отчетов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Report distribution status</value>
+  </synonym>
+</mdclass:CommonPicture>

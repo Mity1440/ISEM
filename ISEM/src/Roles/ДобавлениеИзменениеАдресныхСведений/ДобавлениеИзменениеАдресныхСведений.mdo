@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="312118ff-a2a4-479c-964a-5250cca0cd20">
+  <name>ДобавлениеИзменениеАдресныхСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение адресных сведений</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Add and edit address details</value>
+  </synonym>
+</mdclass:Role>

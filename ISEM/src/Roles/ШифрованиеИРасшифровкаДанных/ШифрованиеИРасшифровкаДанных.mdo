@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6b8e6ae-7d3e-4f6c-bd74-66ee7593868c">
+  <name>ШифрованиеИРасшифровкаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шифрование и расшифровка данных</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Data encryption and decryption</value>
+  </synonym>
+</mdclass:Role>

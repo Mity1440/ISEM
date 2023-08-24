@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5871658-94dd-4df4-9a3f-db5d245dd106">
+  <name>КоллекцияПиктограммНаличиеОригиналаПервичногоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коллекция пиктограмм наличие оригинала первичного документа</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Icon collection availability of source document original</value>
+  </synonym>
+</mdclass:CommonPicture>

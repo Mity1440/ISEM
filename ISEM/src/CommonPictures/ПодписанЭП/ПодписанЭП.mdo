@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd6f96c7-33ee-42b1-bb81-ce7d9652337c">
+  <name>ПодписанЭП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписан ЭП</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Digitally signed</value>
+  </synonym>
+</mdclass:CommonPicture>

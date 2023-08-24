@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f441907c-d02e-431e-baf4-1854e48a1f50">
+  <name>ОбновлениеИнформационнойБазыПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление информационной базы переопределяемый</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Infobase update overridable</value>
+  </synonym>
+  <comment>Всегда на сервере</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
