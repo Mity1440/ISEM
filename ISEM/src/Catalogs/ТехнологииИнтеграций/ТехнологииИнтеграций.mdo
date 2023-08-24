@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e38b8a60-5a29-4469-a2b2-ea83c084ad8c">
+  <producedTypes>
+    <objectType typeId="483701b7-3f76-4c29-b91e-c8be3c83c1b1" valueTypeId="61232b73-ddad-430a-b204-a41cffa36dbc"/>
+    <refType typeId="6d95cbcb-7a65-4fa5-89b8-7b3fd7e48403" valueTypeId="3ba90baa-30b1-497a-9450-2415aa6acc4b"/>
+    <selectionType typeId="7b1d63a1-5317-4244-a374-b79d4087c463" valueTypeId="778f0432-c19f-4073-8529-e838ddefc65a"/>
+    <listType typeId="e6609433-e36d-4589-ad9d-5e52a6a8b352" valueTypeId="2d6cc38e-ef03-48a8-a125-893525b57756"/>
+    <managerType typeId="de2bf14b-768c-4b44-b448-f650db5cb98f" valueTypeId="c4ca9bad-3f00-4fcd-ace0-1858fc4ef4a0"/>
+  </producedTypes>
+  <name>ТехнологииИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технологии интеграций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТехнологииИнтеграций.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ТехнологииИнтеграций.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3d036ba3-ce56-4450-8736-493af820f409">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыТехнологийИнтеграций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a45d1ba9-2d77-4519-9a4e-e5fe83a3531a">
+    <name>Механизм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Механизм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МеханизмыТехнологийИнтеграций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

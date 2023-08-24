@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea1150e9-6af4-4cb1-adbc-6e1eafed4aa8">
+  <producedTypes>
+    <objectType typeId="c6095d17-e4b7-41c1-a413-5dc7ce70ff8c" valueTypeId="18d35a5f-0130-4bf5-ab9f-86c578669060"/>
+    <refType typeId="c5c61a42-92e2-4ca3-b3d7-a500511082f9" valueTypeId="e515c771-c484-464d-a1a6-e2205baafeb7"/>
+    <selectionType typeId="be30fd06-5f12-40ca-92ab-6bbfaa4ea341" valueTypeId="a1f749ff-26b6-4f56-a1ef-e9abda2d902a"/>
+    <listType typeId="c5a57bcc-43a0-44cd-b998-13df59b9f9f6" valueTypeId="99971125-dc42-4bf4-9027-9b50c48ee78c"/>
+    <managerType typeId="2f54f087-d2c1-4935-aeaa-43bbac707d04" valueTypeId="31fe4c47-5244-4590-b89b-bcd70a01b282"/>
+  </producedTypes>
+  <name>ФорматыИнтеграцийСистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форматы интеграций систем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ФорматыИнтеграцийСистем.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="86f689cf-acab-4638-8c7f-eb13b1f4ae00">
+    <name>ТипФормата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип формата</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыФорматаИнтеграцийСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1db79cf5-23ed-45f3-a5e7-7f27bbe5c0d2">
+    <name>Схема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

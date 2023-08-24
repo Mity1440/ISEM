@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abe4cf1a-9891-4272-aa88-8b15f674fe5b">
+  <producedTypes>
+    <refType typeId="513384bd-6823-4dc6-b40b-0200c4500652" valueTypeId="a80b60a6-c800-4d9f-a490-e9d49e19f3d8"/>
+    <listType typeId="11e1f405-95bf-4a9d-a51e-3df273575212" valueTypeId="2c878a20-5a14-4d2f-b313-f16c33030e09"/>
+    <managerType typeId="39b81208-75cb-4e6e-a5b5-b279e5d1cd90" valueTypeId="f0833a2d-a32c-4678-b80d-27b76135c559"/>
+  </producedTypes>
+  <name>ТипыФорматаИнтеграцийСистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы формата интеграций систем</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c8758415-fcf4-4137-aa2e-c7291270cde7">
+    <name>ED</name>
+    <synonym>
+      <key>ru</key>
+      <value>ED</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7c49f442-b2e2-400c-a879-631cf8ae450f">
+    <name>XDTO</name>
+    <synonym>
+      <key>ru</key>
+      <value>XDTO</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b89d4a98-8c58-4497-b30a-cf1734f4fadb">
+    <name>XML</name>
+    <synonym>
+      <key>ru</key>
+      <value>XML</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="093c3548-457d-4133-90aa-bf210c0c3738">
+    <name>Text</name>
+    <synonym>
+      <key>ru</key>
+      <value>Text</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7eefb22c-4e2e-4574-ade3-ff952363921f">
+    <name>CSV</name>
+    <synonym>
+      <key>ru</key>
+      <value>CSV</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c1d0e090-8079-471f-98ce-a05f5c57f0fb">
+    <name>Excel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Excel</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

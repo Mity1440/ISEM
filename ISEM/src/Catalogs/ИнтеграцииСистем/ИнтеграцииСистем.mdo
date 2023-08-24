@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="869dd873-247a-45fb-af3f-d0345ca088b4">
+  <producedTypes>
+    <objectType typeId="5214ff79-05b8-4e04-82b3-c1d1a509d79d" valueTypeId="656fb86e-594b-4ab8-a449-fca6198ad2dd"/>
+    <refType typeId="e36d61da-7fb2-4304-947c-ed40bbaefdf5" valueTypeId="ea70b0b5-70d4-40f8-99c5-4af0215cbc64"/>
+    <selectionType typeId="2043adf1-cf1b-450e-9730-ccdda499aa5b" valueTypeId="fdbe439d-aad8-4cd4-b1bb-68cb9b3669de"/>
+    <listType typeId="310c7f37-42f1-4985-949b-bf1901290300" valueTypeId="710c9d3b-ba99-4f40-8ce0-1a025db60736"/>
+    <managerType typeId="5dc69c9f-b828-443d-a1e3-28dae5e36408" valueTypeId="93109a6c-0e09-4843-9bec-a35ef1b718b6"/>
+  </producedTypes>
+  <name>ИнтеграцииСистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграции систем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИнтеграцииСистем.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ИнтеграцииСистем.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ИнтеграцииСистем.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="e78eec9c-0662-4535-9f8f-0ecb8d01df86">
+    <name>Метаданные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метаданные</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МетаданныеИнформационныхСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a921bd5-1b6a-40d1-b029-99de3956fd27">
+    <name>ИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2ccde8e9-3364-48b2-b8c3-c4329f58a3ad">
+    <name>ТехнологияИнтеграции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Технология интеграции</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТехнологииИнтеграций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ad5d83e-b4c9-45e9-aecb-4fa5d309671b">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НаправленияИнтеграции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6df83ce-fe58-434a-a775-5eb0088d5112">
+    <name>Формат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФорматыИнтеграцийСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="710cb9a7-12c5-4702-bb7d-b6c105d085b2">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f5fe017-b136-4a8f-bfae-aacddf77a55f">
+    <name>ОсновнаяИнтеграция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная интеграция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнтеграцииСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="eb135c21-4624-4a93-b1e9-9b85a7bd74cc">
+    <producedTypes>
+      <objectType typeId="80e23fa3-4fc1-46ac-8f89-221f0ca4ebbd" valueTypeId="0086bf90-aef6-43b8-a384-00d520e935ea"/>
+      <rowType typeId="4639a950-aa5f-418a-aad3-5ec3f16a6d92" valueTypeId="7cc99d0d-fdf5-4227-a465-8677379485fb"/>
+    </producedTypes>
+    <name>Получатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели</value>
+    </synonym>
+    <attributes uuid="c6084898-b2a3-4c47-9cb6-3bd4699c550c">
+      <name>ИС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИС</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИнформационныеСистемы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8fbb5109-1a07-4690-934e-83868cb5f4fc">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4d580100-c9be-4423-abdd-9bc37426d2ad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

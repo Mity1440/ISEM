@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="552c5064-3c6d-4d58-9633-99a43e2b28a9">
+  <producedTypes>
+    <objectType typeId="70490683-4810-4ae9-af99-b7f7351ad38e" valueTypeId="c221644e-8535-49cf-816c-3f19caebdb90"/>
+    <refType typeId="5ceca690-46fd-45c4-8cdd-80e0392f5ad0" valueTypeId="3707742b-e5d1-4f7e-bd21-94739b7f7d45"/>
+    <selectionType typeId="f39d9ed6-279e-43ea-a755-afb22f678f35" valueTypeId="b35d6ea0-a138-4784-a438-b60a5ff676ad"/>
+    <listType typeId="ca3a237a-de47-451b-9b2a-f39bf354df7a" valueTypeId="ca6548fe-bf6f-4c32-9922-fe99c43bc306"/>
+    <managerType typeId="a810bc0f-7ad7-4fe1-9c28-02872e26cc67" valueTypeId="f8e2fdd4-061b-4d8d-9d74-9aab341ee83f"/>
+  </producedTypes>
+  <name>МеханизмыТехнологийИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Механизмы технологий интеграций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МеханизмыТехнологийИнтеграций.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c251e734-f506-482b-a891-fdb84dbf2421">
+      <name>HTTPЗапрос</name>
+      <description>HTTPЗАпрос</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f73d8371-212c-4485-a586-488291f35543">
+      <name>АдаптерСодружество</name>
+      <description>Адаптер</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c664b219-c367-4053-b208-e267c9a35594">
+      <name>ПланыОбменаБСП</name>
+      <description>Планы обмена БСП</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1ddce47-3f50-4e78-9362-3ae14ac9af53">
+  <producedTypes>
+    <objectType typeId="cf45123b-91e1-4537-b01d-2466c91c95b8" valueTypeId="f2123cff-1883-48c3-8552-adefefa1a752"/>
+    <refType typeId="ea8fb15e-74d3-4079-a284-2651a56da334" valueTypeId="d2549fe2-e9f6-4dd4-8733-6a1f72d3ad75"/>
+    <selectionType typeId="3dabd8b9-d6a5-46e0-a691-292639256c49" valueTypeId="4c1f2dbc-ccac-4502-b54a-99dc3067f070"/>
+    <listType typeId="1fde7676-2bed-4877-b481-3e595d2e7254" valueTypeId="00881379-4f11-4493-940d-8b97add6cde9"/>
+    <managerType typeId="f1a433e3-2646-4f77-936d-013fb0a520e0" valueTypeId="013d5b51-5584-4bf6-a591-d15ad6e58636"/>
+  </producedTypes>
+  <name>МетаданныеИнформационныхСистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Метаданные информационных систем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МетаданныеИнформационныхСистем.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ad52e7b1-05c9-421a-89ed-b0842ee2b1b1">
+    <name>ИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

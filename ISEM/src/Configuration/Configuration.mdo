@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ac7e686-6444-4b1d-9978-3b5449e7de46">
+  <name>ISEM</name>
+  <synonym>
+    <key>ru</key>
+    <value>ISEM</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="3e567eac-c20a-4867-b7bc-a0671431ec3b"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="378ee68e-1c97-4898-bf28-a7ee400d6095"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="5603f3ce-efcc-4392-b46f-ab01633f4f0e"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="780b3e31-6de1-4610-983c-6a20fe458537"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="e5d85990-cfa0-490b-a773-83d2cbc9b6ba"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="2c1c1b05-f304-4fac-a67e-322afdb8ece6"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="d1af79c3-a7bd-44d6-b730-7b9dafa2d1a0"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
+  <languages uuid="f1ff0dc3-43c3-435f-bdf6-f69db432fc4b">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.МетаданныеИнтеграций</subsystems>
+  <catalogs>Catalog.ИнтеграцииСистем</catalogs>
+  <catalogs>Catalog.ИнформационныеСистемы</catalogs>
+  <catalogs>Catalog.МетаданныеИнформационныхСистем</catalogs>
+  <catalogs>Catalog.МеханизмыТехнологийИнтеграций</catalogs>
+  <catalogs>Catalog.ТехнологииИнтеграций</catalogs>
+  <catalogs>Catalog.ТипыТехнологийИнтеграций</catalogs>
+  <catalogs>Catalog.ФорматыИнтеграцийСистем</catalogs>
+  <enums>Enum.НаправленияИнтеграции</enums>
+  <enums>Enum.ТипыФорматаИнтеграцийСистем</enums>
+  <reports>Report.ИнтеграцииСистем</reports>
+</mdclass:Configuration>

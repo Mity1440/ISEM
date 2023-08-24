@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="574a35e6-3189-429f-b8be-e7e03786fb3d">
+  <producedTypes>
+    <objectType typeId="0366f54c-146d-4aaf-820a-413d42a503d5" valueTypeId="927eaf3a-3152-4877-bd41-33ceaefc5257"/>
+    <refType typeId="63320220-24b3-47ad-a589-6d0db5c968cc" valueTypeId="65ab4b4a-fc60-4b98-87d0-f41532dfe4be"/>
+    <selectionType typeId="a5d729e3-9398-4e18-a17b-969f6662cf05" valueTypeId="1e43cb5d-177f-450b-9d6b-978deb195aa2"/>
+    <listType typeId="2455de11-9928-4d61-b444-ee4f84cafd86" valueTypeId="381d3bab-4ef4-4b78-8af8-2cc7f5039819"/>
+    <managerType typeId="196aa6e1-ef81-4f2c-9b81-552b1a906696" valueTypeId="39e885c9-1c5e-4098-befb-95ea789f36f6"/>
+  </producedTypes>
+  <name>ИнформационныеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информационные системы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ИнформационныеСистемы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ИнформационныеСистемы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>15</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="10f49a83-77a8-4eed-af3c-a4d9a0f90c34">
+    <producedTypes>
+      <objectType typeId="56650dd9-ccb9-4fbc-bcfe-de5ceaa0a682" valueTypeId="8fa8d4ba-1504-490b-8ae2-4bc5fcfb9ba6"/>
+      <rowType typeId="644c4f85-1c78-4dfe-86c5-d1aa67435f3d" valueTypeId="748112de-1b5d-42c1-bb2a-b24471b00958"/>
+    </producedTypes>
+    <name>Механизмы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Механизмы</value>
+    </synonym>
+    <attributes uuid="a5e98269-392d-47d3-9637-f550b4837a55">
+      <name>Механизм</name>
+      <synonym>
+        <key>ru</key>
+        <value>Механизм</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МеханизмыТехнологийИнтеграций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>
