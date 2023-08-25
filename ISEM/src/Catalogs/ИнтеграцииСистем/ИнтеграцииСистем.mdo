@@ -28,6 +28,7 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ИнтеграцииСистем.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.ИнтеграцииСистем.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ИнтеграцииСистем.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="e78eec9c-0662-4535-9f8f-0ecb8d01df86">
     <name>Метаданные</name>
     <synonym>
@@ -39,6 +40,10 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ИС</name>
+      <field>Catalog.ИнтеграцииСистем.Attribute.ИС</field>
+    </choiceParameterLinks>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -125,14 +130,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2f5fe017-b136-4a8f-bfae-aacddf77a55f">
-    <name>ОсновнаяИнтеграция</name>
+  <attributes uuid="bfa7a289-8688-4251-b71c-fc95cb93edf7">
+    <name>ПоСсылкам1С</name>
     <synonym>
       <key>ru</key>
-      <value>Основная интеграция</value>
+      <value>По ссылке</value>
     </synonym>
     <type>
-      <types>CatalogRef.ИнтеграцииСистем</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -165,6 +170,39 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="e8ddcdca-a220-4853-ae90-c3020e66d29a">
+    <producedTypes>
+      <objectType typeId="013ef05f-dc7f-4a54-b1c4-4d42e042ae4b" valueTypeId="c1a1dc5e-2012-4b07-b658-8a65dc8df81b"/>
+      <rowType typeId="316bd741-874a-492a-bae4-6eccdbefcf99" valueTypeId="64798a80-6fb6-4ac1-a57c-e6457aa26695"/>
+    </producedTypes>
+    <name>ИнтеграцииВладельцы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интеграции владельцы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3bb8e14c-3228-4283-83d6-b9b596893cec">
+      <name>Интеграция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Интеграция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИнтеграцииСистем</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <forms uuid="8fbb5109-1a07-4690-934e-83868cb5f4fc">
     <name>ФормаЭлемента</name>
     <synonym>
@@ -179,6 +217,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d973ac7e-aa57-4527-9cbf-a24157ef7541">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

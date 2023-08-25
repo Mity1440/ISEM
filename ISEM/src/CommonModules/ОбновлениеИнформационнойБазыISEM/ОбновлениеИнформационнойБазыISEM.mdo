@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41b70af6-7d11-459f-852f-9d67df0c07d2">
+  <name>ОбновлениеИнформационнойБазыISEM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление информационной базы ISEM</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>
