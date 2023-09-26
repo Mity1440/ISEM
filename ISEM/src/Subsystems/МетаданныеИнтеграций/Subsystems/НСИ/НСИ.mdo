@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35abade8-736e-4a8a-8fd9-016f5b66fdd3">
-  <name>Справочники</name>
+  <name>НСИ</name>
   <synonym>
     <key>ru</key>
-    <value>Справочники</value>
+    <value>НСИ</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
@@ -13,5 +13,6 @@
   <content>Catalog.ТехнологииИнтеграций</content>
   <content>Catalog.ТипыТехнологийИнтеграций</content>
   <content>Catalog.ФорматыИнтеграцийСистем</content>
+  <content>ChartOfCharacteristicTypes.Атрибуты</content>
   <parentSubsystem>Subsystem.МетаданныеИнтеграций</parentSubsystem>
 </mdclass:Subsystem>

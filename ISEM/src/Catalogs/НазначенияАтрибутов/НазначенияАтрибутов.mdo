@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="102c1337-5856-4649-aedc-e627220b615d">
+  <producedTypes>
+    <objectType typeId="917431dd-8571-4c14-a3b8-d2d700011510" valueTypeId="86eef075-b0ee-4b2d-a594-9b4498af810e"/>
+    <refType typeId="229ea538-9546-437f-be1f-31b9a68868fa" valueTypeId="e9c8c3b4-0da3-4f1d-bab4-0a784d34e4d8"/>
+    <selectionType typeId="1fb357d4-0503-4858-8244-89166c17621f" valueTypeId="ea7c5c01-2aa7-4772-b2ca-432f68041ceb"/>
+    <listType typeId="8f92c53d-1ac0-4144-a1b5-063f7a6f9d22" valueTypeId="0d261fe5-5157-453f-b8d5-482157fc9be0"/>
+    <managerType typeId="d0b8ff4f-b2aa-4416-836a-ea260c3301b4" valueTypeId="3149d91b-1f73-494c-a483-340432790728"/>
+  </producedTypes>
+  <name>НазначенияАтрибутов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения атрибутов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НазначенияАтрибутов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НазначенияАтрибутов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="69e03856-21f3-424c-9bed-c1ab38e8b314">
+      <name>Справочник_ИнтеграцииСистем</name>
+      <description>Справочник &quot;Интеграции систем&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="c3e9d515-7242-4af0-988b-d7c75e2ea268">
+      <name>Справочник_ТочкиВходаИнтеграций</name>
+      <description>Справочник &quot;Точки входа интеграций&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48d3fa37-8af9-4408-b270-cf546208fcc4">
+  <name>Версионирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версионирование</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

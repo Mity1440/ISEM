@@ -43,9 +43,10 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <subsystems>Subsystem.МетаданныеИнтеграций</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
+  <subsystems>Subsystem.МетаданныеИнтеграций</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
+  <subsystems>Subsystem.Функциональные</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
   <styleItems>StyleItem.ВычисленноеПравоДоступаЦвет</styleItems>
@@ -383,9 +384,13 @@
   <commonTemplates>CommonTemplate.ПолучениеДереваОбработчиковОбновления</commonTemplates>
   <commonModules>CommonModule.АдминистрированиеКластера</commonModules>
   <commonModules>CommonModule.АдминистрированиеКластераCOM</commonModules>
-  <commonModules>CommonModule.АдминистрированиеКластераКлиентСервер</commonModules>
+  <commonModules>CommonModule.АдминистрированиеКластераCOMКлиентСервер</commonModules>
   <commonModules>CommonModule.АдминистрированиеКластераRAS</commonModules>
+  <commonModules>CommonModule.АдминистрированиеКластераRASКлиентСервер</commonModules>
+  <commonModules>CommonModule.АдминистрированиеКластераКлиентСервер</commonModules>
+  <commonModules>CommonModule.АнализЖурналаРегистрацииКлиент</commonModules>
   <commonModules>CommonModule.АнализЖурналаРегистрацииСлужебный</commonModules>
+  <commonModules>CommonModule.Версионирование</commonModules>
   <commonModules>CommonModule.ВнешниеПользователи</commonModules>
   <commonModules>CommonModule.ВнешниеПользователиКлиент</commonModules>
   <commonModules>CommonModule.ДлительныеОперации</commonModules>
@@ -398,9 +403,9 @@
   <commonModules>CommonModule.ИнтеграцияПодсистемБСПКлиент</commonModules>
   <commonModules>CommonModule.ИнтеграцияПодсистемБСПКлиентПовтИсп</commonModules>
   <commonModules>CommonModule.ИнтеграцияПодсистемБСППовтИсп</commonModules>
-  <commonModules>CommonModule.АдминистрированиеКластераCOMКлиентСервер</commonModules>
-  <commonModules>CommonModule.АдминистрированиеКластераRASКлиентСервер</commonModules>
-  <commonModules>CommonModule.АнализЖурналаРегистрацииКлиент</commonModules>
+  <commonModules>CommonModule.НастройкиПрограммы</commonModules>
+  <commonModules>CommonModule.НастройкиПрограммыКлиент</commonModules>
+  <commonModules>CommonModule.НастройкиПрограммыПереопределяемый</commonModules>
   <commonModules>CommonModule.ОбновлениеИнформационнойБазы</commonModules>
   <commonModules>CommonModule.ОбновлениеИнформационнойБазыISEM</commonModules>
   <commonModules>CommonModule.ОбновлениеИнформационнойБазыБСП</commonModules>
@@ -468,21 +473,18 @@
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСервер</commonModules>
-  <commonModules>CommonModule.НастройкиПрограммы</commonModules>
-  <commonModules>CommonModule.НастройкиПрограммыКлиент</commonModules>
-  <commonModules>CommonModule.НастройкиПрограммыПереопределяемый</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <webServices>WebService.InterfaceVersion</webServices>
   <eventSubscriptions>EventSubscription.ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастей</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВДокументах</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВОбъектах</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВКонстантах</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаписатьНаборыЗначенийДоступа</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахЗаписей</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастейДокументов</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахРегистровРасчета</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗаписатьЗависимыеНаборыЗначенийДоступа</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахРегистровРасчета</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаписатьНаборыЗначенийДоступа</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастей</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастейДокументов</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВДокументах</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВКонстантах</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахЗаписей</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВОбъектах</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьПометкуУдаленияПредопределенныхЭлементов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьУдалениеПредопределенныхЭлементов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОбновитьВнешнегоПользователя</eventSubscriptions>
@@ -508,6 +510,7 @@
   <scheduledJobs>ScheduledJob.ЗаполнениеПараметровРаботыРасширений</scheduledJobs>
   <scheduledJobs>ScheduledJob.КонтрольУдаленияПомеченныхОбъектов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбновлениеДоступаНаУровнеЗаписей</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОбновлениеИстории</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаСервисовИнтеграции</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОтложенноеОбновлениеИБ</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОтправкаСерверныхОповещенийКлиентам</scheduledJobs>
@@ -559,12 +562,12 @@
   <commandGroups>CommandGroup.Информация</commandGroups>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
   <constants>Constant.АдресПубликацииИнформационнойБазыВИнтернете</constants>
-  <constants>Constant.ЗаголовокСистемы</constants>
   <constants>Constant.АдресПубликацииИнформационнойБазыВЛокальнойСети</constants>
-  <constants>Constant.ИдентификаторИнформационнойБазы</constants>
-  <constants>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</constants>
   <constants>Constant.ГлавныйУзел</constants>
+  <constants>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</constants>
   <constants>Constant.ДоставлятьСерверныеОповещенияБезСистемыВзаимодействия</constants>
+  <constants>Constant.ЗаголовокСистемы</constants>
+  <constants>Constant.ИдентификаторИнформационнойБазы</constants>
   <constants>Constant.ИспользоватьВнешнихПользователей</constants>
   <constants>Constant.ИспользоватьГруппыВнешнихПользователей</constants>
   <constants>Constant.ИспользоватьГруппыПользователей</constants>
@@ -627,6 +630,7 @@
   <catalogs>Catalog.ГруппыВнешнихПользователей</catalogs>
   <catalogs>Catalog.ГруппыДоступа</catalogs>
   <catalogs>Catalog.ГруппыПользователей</catalogs>
+  <catalogs>Catalog.ДополнительныеЗначенияАтрибутов</catalogs>
   <catalogs>Catalog.ИдентификаторыОбъектовМетаданных</catalogs>
   <catalogs>Catalog.ИдентификаторыОбъектовРасширений</catalogs>
   <catalogs>Catalog.ИнтеграцииСистем</catalogs>
@@ -635,21 +639,24 @@
   <catalogs>Catalog.МетаданныеИнформационныхСистем</catalogs>
   <catalogs>Catalog.МеханизмыТехнологийИнтеграций</catalogs>
   <catalogs>Catalog.НаборыГруппДоступа</catalogs>
+  <catalogs>Catalog.НазначенияАтрибутов</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.ПрофилиГруппДоступа</catalogs>
   <catalogs>Catalog.ТехнологииИнтеграций</catalogs>
   <catalogs>Catalog.ТипыТехнологийИнтеграций</catalogs>
+  <catalogs>Catalog.ТочкиВходаИнтеграций</catalogs>
   <catalogs>Catalog.ФорматыИнтеграцийСистем</catalogs>
   <documents>Document.ДляВнедренияБСП</documents>
-  <enums>Enum.НаправленияИнтеграции</enums>
-  <enums>Enum.ТипыФорматаИнтеграцийСистем</enums>
   <enums>Enum.ДополнительныеЗначенияДоступа</enums>
+  <enums>Enum.НаправленияИнтеграции</enums>
   <enums>Enum.ПорядокОбработчиковОбновления</enums>
   <enums>Enum.РежимыВыполненияОбработчиков</enums>
   <enums>Enum.РежимыВыполненияОтложенныхОбработчиков</enums>
+  <enums>Enum.СостояниеИнтеграций</enums>
   <enums>Enum.СпособыРедактированияЭлектронныхПисем</enums>
   <enums>Enum.СтатусыОбработчиковОбновления</enums>
   <enums>Enum.ТипыДанныхКэшаПрограммныхИнтерфейсов</enums>
+  <enums>Enum.ТипыФорматаИнтеграцийСистем</enums>
   <enums>Enum.ФорматыСохраненияОтчетов</enums>
   <reports>Report.АнализЖурналаРегистрации</reports>
   <reports>Report.АнализПравДоступа</reports>
@@ -661,18 +668,18 @@
   <reports>Report.СведенияОПользователях</reports>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>
   <dataProcessors>DataProcessor.НастройкиПользователей</dataProcessors>
-  <dataProcessors>DataProcessor.ОписаниеОбработчиковОбновления</dataProcessors>
   <dataProcessors>DataProcessor.НерекомендуемаяВерсияПлатформы</dataProcessors>
+  <dataProcessors>DataProcessor.ОписаниеОбработчиковОбновления</dataProcessors>
+  <dataProcessors>DataProcessor.ПанельАдминистрированияБСП</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
-  <dataProcessors>DataProcessor.ПанельАдминистрированияБСП</dataProcessors>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
-  <informationRegisters>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ</informationRegisters>
-  <informationRegisters>InformationRegister.ГруппыЗначенийДоступа</informationRegisters>
-  <informationRegisters>InformationRegister.ДлительныеОперации</informationRegisters>
   <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
+  <informationRegisters>InformationRegister.ГруппыЗначенийДоступа</informationRegisters>
+  <informationRegisters>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ</informationRegisters>
+  <informationRegisters>InformationRegister.ДлительныеОперации</informationRegisters>
   <informationRegisters>InformationRegister.ЗависимостиПравДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияГруппДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияГруппДоступаПоУмолчанию</informationRegisters>
@@ -708,4 +715,5 @@
   <informationRegisters>InformationRegister.ТаблицыГруппДоступа</informationRegisters>
   <informationRegisters>InformationRegister.УдаляемыеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.ФиксацияОбработкиДанныхОбработчиками</informationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.Атрибуты</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

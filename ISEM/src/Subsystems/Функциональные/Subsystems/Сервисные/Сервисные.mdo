@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13700442-4368-4227-85df-fa274a034880">
+  <name>Сервисные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисные</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.Версионирование</content>
+  <content>ScheduledJob.ОбновлениеИстории</content>
+  <parentSubsystem>Subsystem.Функциональные</parentSubsystem>
+</mdclass:Subsystem>

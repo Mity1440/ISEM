@@ -11,6 +11,6 @@
     <picture>CommonPicture.МеханизмыИнтеграций</picture>
   </picture>
   <content>Catalog.ИнтеграцииСистем</content>
-  <subsystems>Справочники</subsystems>
+  <subsystems>НСИ</subsystems>
   <subsystems>Отчеты</subsystems>
 </mdclass:Subsystem>

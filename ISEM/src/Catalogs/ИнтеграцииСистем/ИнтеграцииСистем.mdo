@@ -30,10 +30,10 @@
   <defaultListForm>Catalog.ИнтеграцииСистем.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.ИнтеграцииСистем.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="e78eec9c-0662-4535-9f8f-0ecb8d01df86">
-    <name>Метаданные</name>
+    <name>УдалитьМетаданные</name>
     <synonym>
       <key>ru</key>
-      <value>Метаданные</value>
+      <value>Удалить метаданные</value>
     </synonym>
     <type>
       <types>CatalogRef.МетаданныеИнформационныхСистем</types>
@@ -130,17 +130,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="bfa7a289-8688-4251-b71c-fc95cb93edf7">
-    <name>ПоСсылкам1С</name>
+  <attributes uuid="6b715daa-11e4-45fb-a800-9471febf7512">
+    <name>Состояние</name>
     <synonym>
       <key>ru</key>
-      <value>По ссылке</value>
+      <value>Состояние</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>EnumRef.СостояниеИнтеграций</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -169,16 +170,154 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="40322952-39b8-48ae-84d7-af1831e56629">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="e491aee5-1d51-41eb-a29d-42db0009013d">
+    <producedTypes>
+      <objectType typeId="6f1202d0-797c-47f5-bb67-264edf7e684a" valueTypeId="df4fa38e-5baa-4656-b614-9db39cfa2659"/>
+      <rowType typeId="07ca6c8d-e252-4309-b6bc-06d81d5e2237" valueTypeId="9810d3ad-460c-403d-9944-692e6ac93fe7"/>
+    </producedTypes>
+    <name>Источники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источники</value>
+    </synonym>
+    <attributes uuid="c8ec77f7-587d-41ac-bba9-7c38c3cce752">
+      <name>ИС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИС</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИнформационныеСистемы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1eec850e-8f35-4c98-b469-ad144e676afb">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="e8ddcdca-a220-4853-ae90-c3020e66d29a">
     <producedTypes>
       <objectType typeId="013ef05f-dc7f-4a54-b1c4-4d42e042ae4b" valueTypeId="c1a1dc5e-2012-4b07-b658-8a65dc8df81b"/>
       <rowType typeId="316bd741-874a-492a-bae4-6eccdbefcf99" valueTypeId="64798a80-6fb6-4ac1-a57c-e6457aa26695"/>
     </producedTypes>
-    <name>ИнтеграцииВладельцы</name>
+    <name>СвязанныеИнтеграции</name>
     <synonym>
       <key>ru</key>
-      <value>Интеграции владельцы</value>
+      <value>Связанные интеграции</value>
+    </synonym>
+    <attributes uuid="3bb8e14c-3228-4283-83d6-b9b596893cec">
+      <name>Интеграция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Интеграция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИнтеграцииСистем</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="40b546a3-89bb-47b5-ae8b-2584401597e9">
+    <producedTypes>
+      <objectType typeId="958e9ff1-957c-4ddf-afdc-6d3f700b197c" valueTypeId="5752495c-fe59-4b84-8fad-0a2da4af6a3d"/>
+      <rowType typeId="462af168-d767-49b3-a9ec-64f7cda4ea96" valueTypeId="f4f89924-e678-49d8-b7ec-d742a7622f7b"/>
+    </producedTypes>
+    <name>ТочкиВхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точки входа</value>
+    </synonym>
+    <attributes uuid="2612e189-13ea-4306-be82-08740eee97f5">
+      <name>ТочкаВхода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Точка входа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТочкиВходаИнтеграций</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ИС</name>
+        <field>Catalog.ИнтеграцииСистем.Attribute.ИС</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="627e0dfa-b385-42c8-bf98-a44d09850f4d">
+    <producedTypes>
+      <objectType typeId="d0c3b641-61ed-436f-806d-dff156be8323" valueTypeId="01b2fc3a-bed9-4f92-b165-5437f219a2d7"/>
+      <rowType typeId="1f8b6732-0bfb-49a1-94c8-e3678ad97e52" valueTypeId="48ec4493-306c-426d-96ee-68967b79a449"/>
+    </producedTypes>
+    <name>МетаданныеСистем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метаданные систем</value>
+    </synonym>
+    <attributes uuid="fa4708d7-9b82-4f0a-9256-f6272b437ad4">
+      <name>МетаданноеСистемы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Метаданное</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МетаданныеИнформационныхСистем</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ИС</name>
+        <field>Catalog.ИнтеграцииСистем.Attribute.ИС</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="03b3c1ef-d0af-44e8-b95a-96987c101585">
+    <producedTypes>
+      <objectType typeId="895fdb5a-d9d2-48c6-8221-10a4891de442" valueTypeId="5dca9e19-364c-4184-9c3e-bc3f611e5e38"/>
+      <rowType typeId="a716bae3-3454-41a6-9a98-723cc9e5ad41" valueTypeId="364ce689-357d-4359-a0c1-e5ce5d1fdeb0"/>
+    </producedTypes>
+    <name>Атрибуты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибуты</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -188,14 +327,58 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="3bb8e14c-3228-4283-83d6-b9b596893cec">
-      <name>Интеграция</name>
+    <attributes uuid="c197bb0a-d527-4bad-b938-a94bcf3f8439">
+      <name>Ключ</name>
       <synonym>
         <key>ru</key>
-        <value>Интеграция</value>
+        <value>Ключ</value>
       </synonym>
       <type>
-        <types>CatalogRef.ИнтеграцииСистем</types>
+        <types>ChartOfCharacteristicTypesRef.Атрибуты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.НазначениеАтрибута</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Catalog.НазначенияАтрибутов.Справочник_ИнтеграцииСистем</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8b75c8b4-225a-44e4-9eda-0a1cacbe41a0">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.Атрибуты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.ИнтеграцииСистем.TabularSection.Атрибуты.Attribute.Ключ</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <field>Catalog.ИнтеграцииСистем.TabularSection.Атрибуты.Attribute.Ключ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="78732b56-9cfe-4c08-ba78-8a1b5cb043ce">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

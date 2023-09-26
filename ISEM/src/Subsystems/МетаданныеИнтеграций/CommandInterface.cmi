@@ -22,6 +22,6 @@
   </commandsOrder>
   <subsystemsOrder>
     <subsystems>Subsystem.МетаданныеИнтеграций.Subsystem.Отчеты</subsystems>
-    <subsystems>Subsystem.МетаданныеИнтеграций.Subsystem.Справочники</subsystems>
+    <subsystems>Subsystem.МетаданныеИнтеграций.Subsystem.НСИ</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec8838f6-613e-4514-87f5-81a4c27adb9f">
+  <name>Функциональные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Функциональные</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <subsystems>МетаданныеИнтеграций</subsystems>
+  <subsystems>Сервисные</subsystems>
+</mdclass:Subsystem>

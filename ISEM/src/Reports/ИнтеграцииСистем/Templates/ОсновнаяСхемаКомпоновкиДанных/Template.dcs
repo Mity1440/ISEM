@@ -9,38 +9,190 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Наименование</dataPath>
 			<field>Наименование</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ИС</dataPath>
 			<field>ИС</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Метаданные</dataPath>
-			<field>Метаданные</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ТехнологияИнтеграции</dataPath>
 			<field>ТехнологияИнтеграции</field>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Направление</dataPath>
 			<field>Направление</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Формат</dataPath>
 			<field>Формат</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Интеграция</dataPath>
+			<field>Интеграция</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Получатель</dataPath>
+			<field>Получатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получатель</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+			<presentationExpression>ВЫБОР КОГДА Получатель  = ЗНАЧЕНИЕ(Справочник.Информационныесистемы.ПустаяСсылка) Тогда "" ИНАЧЕ Получатель КОНЕЦ</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Источник</dataPath>
+			<field>Источник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Метаданные</dataPath>
+			<field>Метаданные</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	ИнтеграцииСистем.Наименование КАК Наименование,
-	ИнтеграцииСистем.Метаданные КАК Метаданные,
 	ИнтеграцииСистем.ИС КАК ИС,
 	ИнтеграцииСистем.ТехнологияИнтеграции КАК ТехнологияИнтеграции,
 	ИнтеграцииСистем.Направление КАК Направление,
-	ИнтеграцииСистем.Формат КАК Формат
+	ИнтеграцииСистем.Формат КАК Формат,
+	ИнтеграцииСистем.Ссылка КАК Интеграция,
+	ИнтеграцииСистемПолучатели.ИС КАК Получатель,
+	ИнтеграцииСистемИсточники.ИС КАК Источник,
+	ИнтеграцииСистемМетаданныеСистем.МетаданноеСистемы КАК Метаданные
 ИЗ
-	Справочник.ИнтеграцииСистем КАК ИнтеграцииСистем</query>
+	Справочник.ИнтеграцииСистем.Получатели КАК ИнтеграцииСистемПолучатели
+		ПРАВОЕ СОЕДИНЕНИЕ Справочник.ИнтеграцииСистем КАК ИнтеграцииСистем
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ИнтеграцииСистем.Источники КАК ИнтеграцииСистемИсточники
+			ПО (ИнтеграцииСистемИсточники.Ссылка = ИнтеграцииСистем.Ссылка)
+			ПРАВОЕ СОЕДИНЕНИЕ Справочник.ИнтеграцииСистем.МетаданныеСистем КАК ИнтеграцииСистемМетаданныеСистем
+			ПО (ИнтеграцииСистемМетаданныеСистем.Ссылка = ИнтеграцииСистем.Ссылка)
+		ПО ИнтеграцииСистемПолучатели.Ссылка = ИнтеграцииСистем.Ссылка
+ГДЕ
+	НЕ ИнтеграцииСистем.ПометкаУдаления</query>
 	</dataSet>
+	<calculatedField>
+		<dataPath>ПолучательВычисляемый</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Получатели</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоПолучателей</dataPath>
+		<expression>ВЫБОР КОГДА Направление = Значение(Перечисление.НаправленияИнтеграции.Исходящая) ИЛИ Направление = Значение(Перечисление.НаправленияИнтеграции.ВходящаяИсходящая)  Тогда 1 Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество получателей</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоИнтеграций</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество интеграций</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоОтправителей</dataPath>
+		<expression>ВЫБОР КОГДА Направление = Значение(Перечисление.НаправленияИнтеграции.Входящая) ИЛИ Направление = Значение(Перечисление.НаправленияИнтеграции.ВходящаяИсходящая) Тогда 1 Иначе 0 Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество отправителей</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ИсточникВычисляемый</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Источники</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ПолучательВычисляемый</dataPath>
+		<expression>СоединитьСтроки(Массив(Различные Получатель), ";")</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПолучателей</dataPath>
+		<expression>Количество(Различные Получатель)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоИнтеграций</dataPath>
+		<expression>Количество(Различные Интеграция)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникВычисляемый</dataPath>
+		<expression>СоединитьСтроки(Массив(Различные Источник), ";")</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОтправителей</dataPath>
+		<expression>Количество(Различные Источник)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПолучательВычисляемый</dataPath>
+		<expression>""</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ИсточникВычисляемый</dataPath>
+		<expression>""</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -53,7 +205,7 @@
 					<dcsset:field>Метаданные</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Наименование</dcsset:field>
+					<dcsset:field>Интеграция</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Направление</dcsset:field>
@@ -64,7 +216,45 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Формат</dcsset:field>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИнтеграций</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолучательВычисляемый</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПолучателей</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИсточникВычисляемый</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОтправителей</dcsset:field>
+				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ИС</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>bb681476-e76a-473d-a9e4-5ff57a60b52b</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ТехнологияИнтеграции</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>02670d6c-77aa-4865-ba1f-06f68abb62a8</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Получатель</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>331c8bbd-6b50-47ba-9872-2cc5969aa21c</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:conditionalAppearance>
 				<dcsset:item>
 					<dcsset:selection>
@@ -134,6 +324,10 @@
 					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
 					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
@@ -192,7 +386,7 @@
 						<dcsset:item xsi:type="dcsset:StructureItemGroup">
 							<dcsset:groupItems>
 								<dcsset:item xsi:type="dcsset:GroupItemField">
-									<dcsset:field>Формат</dcsset:field>
+									<dcsset:field>ТехнологияИнтеграции</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -206,6 +400,22 @@
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 							</dcsset:selection>
 							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Формат</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Интеграция</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
 								<dcsset:order>
 									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 								</dcsset:order>

@@ -22,13 +22,20 @@
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
-  <descriptionLength>25</descriptionLength>
+  <descriptionLength>150</descriptionLength>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
   <predefined>
+    <items id="aa338eb1-c2f1-44d7-bae3-07f563f39bd9">
+      <name>COMObject</name>
+      <description>COMObject</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
     <items id="9de0ba3a-84c0-4dd5-a592-d4539efc62d1">
       <name>HTTPЗапрос</name>
       <description>HTTPЗапрос</description>
@@ -55,6 +62,13 @@
       <description>WEBСервис</description>
       <code xsi:type="core:StringValue">
         <value>000000001</value>
+      </code>
+    </items>
+    <items id="e23540ef-4ec3-436b-bb0b-713598670e0b">
+      <name>ВнешниеИсточникиДанных1С</name>
+      <description>Внешние источники данных</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
       </code>
     </items>
     <items id="c2c6486a-a772-4908-a562-bb9d01d672f2">

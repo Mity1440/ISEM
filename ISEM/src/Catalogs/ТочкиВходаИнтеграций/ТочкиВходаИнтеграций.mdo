@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20fa8e75-fbd5-4428-a626-a835a1b3971a">
+  <producedTypes>
+    <objectType typeId="7aec1c52-3c2d-4eff-a3a6-bbd0ead0caf3" valueTypeId="16e141e0-7287-49e3-bd35-e3f6d026c9bd"/>
+    <refType typeId="d5ccfd71-3e20-4fd4-ada1-7dab8bd3e564" valueTypeId="69260d7d-4c5c-4419-832d-86f6b9711299"/>
+    <selectionType typeId="da8e4778-eaf9-4009-8fa4-82a032da9dca" valueTypeId="c9fcedcd-bf9b-4daa-8f95-b53739d89a3c"/>
+    <listType typeId="7df6de1f-fe83-4d26-bc71-170cd047d3a1" valueTypeId="0fd4cf2c-a8fb-46fa-95d9-da07ac9489cc"/>
+    <managerType typeId="2a1f8a43-69a7-4605-ac1e-877792bf5a40" valueTypeId="9e06e729-923d-4203-a91f-b1c2a718a35b"/>
+  </producedTypes>
+  <name>ТочкиВходаИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Точки входа интеграций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТочкиВходаИнтеграций.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТочкиВходаИнтеграций.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.ТочкиВходаИнтеграций.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="16b43b5a-3628-448b-ae3a-e19337110a0f">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6c34af3-24b7-4701-974f-4d0232fbfab4">
+    <name>ИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнформационныеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="6b22be59-1d14-416d-9cef-20d66f99ce44">
+    <producedTypes>
+      <objectType typeId="9c067b10-7115-4413-8aaa-a0c68a930024" valueTypeId="89392bda-2d32-4f49-99ed-267be0aef0a4"/>
+      <rowType typeId="34443dc0-5fbc-4961-9355-c30d5a3023b5" valueTypeId="7aef495f-e20a-4549-a32c-ff5b17a46055"/>
+    </producedTypes>
+    <name>Атрибуты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибуты</value>
+    </synonym>
+    <attributes uuid="64594386-443e-4960-bc55-7fdf198100ce">
+      <name>УдалитьКлюч</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить ключ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6730717-bc42-4961-9c59-513071b23555">
+      <name>УдалитьЗначение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f1d6774f-4bc6-46e6-8232-6091052e7648">
+      <name>Ключ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ключ</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.Атрибуты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.НазначениеАтрибута</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Catalog.НазначенияАтрибутов.Справочник_ТочкиВходаИнтеграций</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0925b7fe-c07d-4c5f-9be2-7ed5fc79327a">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.Атрибуты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.ТочкиВходаИнтеграций.TabularSection.Атрибуты.Attribute.Ключ</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <field>Catalog.ТочкиВходаИнтеграций.TabularSection.Атрибуты.Attribute.Ключ</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1f2ca949-7088-4da2-ae99-d73f891f976e">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8cbdbc64-dc4f-4b69-9f90-ca9c90d05c98">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7d8686ce-7a90-45fa-8d9a-22c46be13ca9">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

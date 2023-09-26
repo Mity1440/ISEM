@@ -2255,7 +2255,7 @@
                   <key>en</key>
                   <value>Basic electronic signature (CAdES-BES)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
               <choiceList>
                 <presentation>
@@ -2266,7 +2266,7 @@
                   <key>en</key>
                   <value>Electronic signature with time (CAdES-T)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
               <choiceList>
                 <presentation>
@@ -2277,7 +2277,7 @@
                   <key>en</key>
                   <value>Archival electronic signature (CAdES-A)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
             </extInfo>
           </items>

@@ -54,4 +54,27 @@
       <value>Excel</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="1ff55a45-02a3-4084-b891-af82128b707a">
+    <name>JSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>JSON</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="34e198dd-15f9-4e27-b3bb-e946cddd4c05">
+    <name>Recordset</name>
+    <synonym>
+      <key>ru</key>
+      <value>Recordset</value>
+    </synonym>
+    <comment>ADODB.Recordset</comment>
+  </enumValues>
+  <enumValues uuid="7fea02d3-fc7e-4f68-800d-568d938535f4">
+    <name>Запрос1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос1С</value>
+    </synonym>
+    <comment>Запрос в системе 1С к внешним источникам данных</comment>
+  </enumValues>
 </mdclass:Enum>

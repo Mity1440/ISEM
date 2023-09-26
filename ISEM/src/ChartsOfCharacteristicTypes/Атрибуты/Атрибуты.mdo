@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93800b85-8f78-4dce-994c-fcc017cd29b8">
+  <producedTypes>
+    <objectType typeId="09a3fca0-8e6f-4936-8cc1-f5d4c3d3208b" valueTypeId="2e25e9f9-9ebd-4b9d-9f39-5a902d7dc21c"/>
+    <refType typeId="e73c274f-0dfe-4050-8c45-61feb886fcbb" valueTypeId="a4c2dd85-9b08-4308-8b0a-2cae4632fcca"/>
+    <selectionType typeId="93d306eb-61d1-4a07-9389-d445cf1dfc8d" valueTypeId="61481619-9b72-46f8-9f8d-e832ca99ad0d"/>
+    <listType typeId="ce3ea2e6-c6df-4518-ac35-a50509da5a32" valueTypeId="3d622ae4-4a37-4f58-821e-543d142cfd16"/>
+    <managerType typeId="fdff951a-68e4-4273-b825-9f3c3f280b52" valueTypeId="c1587216-590a-458f-b284-2246a5704ad8"/>
+    <containerType typeId="c2205be8-f706-4392-aa94-76fa9bbbeaec" valueTypeId="52aed2a0-471a-4841-bb9a-b3a952b61671"/>
+  </producedTypes>
+  <name>Атрибуты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Атрибуты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.Атрибуты.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.Атрибуты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.ДополнительныеЗначенияАтрибутов</characteristicExtValues>
+  <type>
+    <types>Boolean</types>
+    <types>CatalogRef.ДополнительныеЗначенияАтрибутов</types>
+    <types>String</types>
+    <types>Date</types>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="00acc8c5-7fa2-4526-b6c7-80b68c95fcfc">
+    <name>НазначениеАтрибута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение атрибута</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НазначенияАтрибутов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ChartOfCharacteristicTypes>
