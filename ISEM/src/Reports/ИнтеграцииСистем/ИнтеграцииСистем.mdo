@@ -7,7 +7,7 @@
   <name>ИнтеграцииСистем</name>
   <synonym>
     <key>ru</key>
-    <value>Интеграции систем</value>
+    <value>Анализ интеграций систем</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИнтеграцииСистем.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

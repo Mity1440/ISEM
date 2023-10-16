@@ -7,18 +7,22 @@
     <listType typeId="680f5b0c-a1bc-4235-857b-fbe02e9d7b5b" valueTypeId="5ce41009-af62-4bfc-a0a9-f1a37032b680"/>
     <managerType typeId="b3ed5ea6-d4dc-4165-9e8c-a74a7e61b1c0" valueTypeId="b8d90827-e14f-48de-836b-0d5a0e857ec7"/>
   </producedTypes>
-  <name>ТипыТехнологийИнтеграций</name>
+  <name>СпособыТехнологийИнтеграций</name>
   <synonym>
     <key>ru</key>
-    <value>Типы технологий интеграций</value>
+    <value>Способы технологий интеграций</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.ТипыТехнологийИнтеграций.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.ТипыТехнологийИнтеграций.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СпособыТехнологийИнтеграций.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СпособыТехнологийИнтеграций.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Способ технологиии интеграции</value>
+  </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
@@ -30,22 +34,22 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <predefined>
     <items id="aa338eb1-c2f1-44d7-bae3-07f563f39bd9">
-      <name>COMObject</name>
-      <description>COMObject</description>
+      <name>COM</name>
+      <description>COM</description>
       <code xsi:type="core:StringValue">
         <value>000000006</value>
       </code>
     </items>
     <items id="9de0ba3a-84c0-4dd5-a592-d4539efc62d1">
       <name>HTTPЗапрос</name>
-      <description>HTTPЗапрос</description>
+      <description>HTTP Запрос</description>
       <code xsi:type="core:StringValue">
         <value>000000005</value>
       </code>
     </items>
     <items id="ea365bfa-f272-4649-8b2c-6105b527c24b">
       <name>HTTPСервис</name>
-      <description>HTTPСервис</description>
+      <description>HTTP Сервис</description>
       <code xsi:type="core:StringValue">
         <value>000000002</value>
       </code>
@@ -59,21 +63,21 @@
     </items>
     <items id="aaeac83d-956d-434c-8d3f-3d7af2c55b02">
       <name>WEBСервис</name>
-      <description>WEBСервис</description>
+      <description>WEB Сервис</description>
       <code xsi:type="core:StringValue">
         <value>000000001</value>
       </code>
     </items>
     <items id="e23540ef-4ec3-436b-bb0b-713598670e0b">
-      <name>ВнешниеИсточникиДанных1С</name>
-      <description>Внешние источники данных</description>
+      <name>ВИД1С</name>
+      <description>Внешние источники данных </description>
       <code xsi:type="core:StringValue">
         <value>000000007</value>
       </code>
     </items>
     <items id="c2c6486a-a772-4908-a562-bb9d01d672f2">
       <name>Шина1С</name>
-      <description>Шина1 С</description>
+      <description>Шина 1С</description>
       <code xsi:type="core:StringValue">
         <value>000000004</value>
       </code>
@@ -81,4 +85,19 @@
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <attributes uuid="711f7630-e7c4-4e97-a391-9d9ed30d5aa7">
+    <name>Протокол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протокол</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПротоколыИнтеграций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

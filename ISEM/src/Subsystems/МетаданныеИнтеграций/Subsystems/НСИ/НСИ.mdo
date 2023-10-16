@@ -11,7 +11,7 @@
   <content>Catalog.МетаданныеИнформационныхСистем</content>
   <content>Catalog.МеханизмыТехнологийИнтеграций</content>
   <content>Catalog.ТехнологииИнтеграций</content>
-  <content>Catalog.ТипыТехнологийИнтеграций</content>
+  <content>Catalog.СпособыТехнологийИнтеграций</content>
   <content>Catalog.ФорматыИнтеграцийСистем</content>
   <content>ChartOfCharacteristicTypes.Атрибуты</content>
   <parentSubsystem>Subsystem.МетаданныеИнтеграций</parentSubsystem>

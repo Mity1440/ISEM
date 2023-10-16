@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b8c761d-b510-4a09-9229-2460e8ae41de">
+  <producedTypes>
+    <refType typeId="7afc853b-6a57-4b4e-90ae-95db6655e09e" valueTypeId="9087d700-142c-4720-a967-8cd526ad189e"/>
+    <listType typeId="8d10358b-469c-4a02-a3da-fe52ee161351" valueTypeId="8b6ea3ba-4b69-47ad-93b1-bb2d4348b663"/>
+    <managerType typeId="3569b0bf-ec45-4f75-93a7-2c0174ae4c76" valueTypeId="69b0b763-edd9-4312-b1d6-10dfed7b4c3a"/>
+  </producedTypes>
+  <name>ПротоколыИнтеграций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протоколы интеграций</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="45f2013d-c751-45f0-9b33-4f36848fa943">
+    <name>http</name>
+    <synonym>
+      <key>ru</key>
+      <value>Http</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="048015de-6e8f-4902-bc62-d6ef2c725c46">
+    <name>file</name>
+    <synonym>
+      <key>ru</key>
+      <value>File</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ee50aee8-1b98-488e-8a09-ccfb3a20cd76">
+    <name>amqp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Amqp</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="053c6430-fb90-41f9-8997-a87d5aaf02a6">
+    <name>com</name>
+    <synonym>
+      <key>ru</key>
+      <value>Com</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f6706cf4-fe44-424b-bc54-e793113cda34">
+    <name>ВИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВИД</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

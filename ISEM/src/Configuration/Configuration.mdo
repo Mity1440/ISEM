@@ -43,8 +43,8 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.МетаданныеИнтеграций</subsystems>
+  <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.Функциональные</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
@@ -476,15 +476,15 @@
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <webServices>WebService.InterfaceVersion</webServices>
   <eventSubscriptions>EventSubscription.ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаписатьЗависимыеНаборыЗначенийДоступа</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахРегистровРасчета</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаписатьНаборыЗначенийДоступа</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастей</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастейДокументов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВДокументах</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВКонстантах</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахЗаписей</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВОбъектах</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВКонстантах</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаписатьНаборыЗначенийДоступа</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахЗаписей</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаполнитьНаборыЗначенийДоступаТабличныхЧастейДокументов</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗапретитьИспользованиеУдаляемыхОбъектовВНаборахРегистровРасчета</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ЗаписатьЗависимыеНаборыЗначенийДоступа</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьПометкуУдаленияПредопределенныхЭлементов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ЗапретитьУдалениеПредопределенныхЭлементов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ОбновитьВнешнегоПользователя</eventSubscriptions>
@@ -510,7 +510,6 @@
   <scheduledJobs>ScheduledJob.ЗаполнениеПараметровРаботыРасширений</scheduledJobs>
   <scheduledJobs>ScheduledJob.КонтрольУдаленияПомеченныхОбъектов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбновлениеДоступаНаУровнеЗаписей</scheduledJobs>
-  <scheduledJobs>ScheduledJob.ОбновлениеИстории</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОбработкаСервисовИнтеграции</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОтложенноеОбновлениеИБ</scheduledJobs>
   <scheduledJobs>ScheduledJob.ОтправкаСерверныхОповещенийКлиентам</scheduledJobs>
@@ -518,6 +517,7 @@
   <scheduledJobs>ScheduledJob.УдалениеПомеченныхОбъектов</scheduledJobs>
   <scheduledJobs>ScheduledJob.УдалениеУстаревшихПараметровРаботыВерсийРасширений</scheduledJobs>
   <scheduledJobs>ScheduledJob.УстановкаПорядкаОтложенногоОбновленияВМоделиСервиса</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОбновлениеИстории</scheduledJobs>
   <functionalOptions>FunctionalOption.ИспользоватьВнешнихПользователей</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьУдалениеПомеченныхОбъектов</functionalOptions>
   <functionalOptions>FunctionalOption.ОграничиватьДоступНаУровнеЗаписей</functionalOptions>
@@ -562,12 +562,12 @@
   <commandGroups>CommandGroup.Информация</commandGroups>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
   <constants>Constant.АдресПубликацииИнформационнойБазыВИнтернете</constants>
-  <constants>Constant.АдресПубликацииИнформационнойБазыВЛокальнойСети</constants>
-  <constants>Constant.ГлавныйУзел</constants>
-  <constants>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</constants>
-  <constants>Constant.ДоставлятьСерверныеОповещенияБезСистемыВзаимодействия</constants>
   <constants>Constant.ЗаголовокСистемы</constants>
+  <constants>Constant.АдресПубликацииИнформационнойБазыВЛокальнойСети</constants>
   <constants>Constant.ИдентификаторИнформационнойБазы</constants>
+  <constants>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</constants>
+  <constants>Constant.ГлавныйУзел</constants>
+  <constants>Constant.ДоставлятьСерверныеОповещенияБезСистемыВзаимодействия</constants>
   <constants>Constant.ИспользоватьВнешнихПользователей</constants>
   <constants>Constant.ИспользоватьГруппыВнешнихПользователей</constants>
   <constants>Constant.ИспользоватьГруппыПользователей</constants>
@@ -633,6 +633,7 @@
   <catalogs>Catalog.ДополнительныеЗначенияАтрибутов</catalogs>
   <catalogs>Catalog.ИдентификаторыОбъектовМетаданных</catalogs>
   <catalogs>Catalog.ИдентификаторыОбъектовРасширений</catalogs>
+  <catalogs>Catalog.ИнструментыРазработкиФормата</catalogs>
   <catalogs>Catalog.ИнтеграцииСистем</catalogs>
   <catalogs>Catalog.ИнформационныеСистемы</catalogs>
   <catalogs>Catalog.КлючиДоступа</catalogs>
@@ -642,14 +643,15 @@
   <catalogs>Catalog.НазначенияАтрибутов</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.ПрофилиГруппДоступа</catalogs>
+  <catalogs>Catalog.СпособыТехнологийИнтеграций</catalogs>
   <catalogs>Catalog.ТехнологииИнтеграций</catalogs>
-  <catalogs>Catalog.ТипыТехнологийИнтеграций</catalogs>
   <catalogs>Catalog.ТочкиВходаИнтеграций</catalogs>
   <catalogs>Catalog.ФорматыИнтеграцийСистем</catalogs>
   <documents>Document.ДляВнедренияБСП</documents>
   <enums>Enum.ДополнительныеЗначенияДоступа</enums>
   <enums>Enum.НаправленияИнтеграции</enums>
   <enums>Enum.ПорядокОбработчиковОбновления</enums>
+  <enums>Enum.ПротоколыИнтеграций</enums>
   <enums>Enum.РежимыВыполненияОбработчиков</enums>
   <enums>Enum.РежимыВыполненияОтложенныхОбработчиков</enums>
   <enums>Enum.СостояниеИнтеграций</enums>
@@ -668,18 +670,18 @@
   <reports>Report.СведенияОПользователях</reports>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>
   <dataProcessors>DataProcessor.НастройкиПользователей</dataProcessors>
-  <dataProcessors>DataProcessor.НерекомендуемаяВерсияПлатформы</dataProcessors>
   <dataProcessors>DataProcessor.ОписаниеОбработчиковОбновления</dataProcessors>
-  <dataProcessors>DataProcessor.ПанельАдминистрированияБСП</dataProcessors>
+  <dataProcessors>DataProcessor.НерекомендуемаяВерсияПлатформы</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
+  <dataProcessors>DataProcessor.ПанельАдминистрированияБСП</dataProcessors>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
-  <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
-  <informationRegisters>InformationRegister.ГруппыЗначенийДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ</informationRegisters>
+  <informationRegisters>InformationRegister.ГруппыЗначенийДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ДлительныеОперации</informationRegisters>
+  <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
   <informationRegisters>InformationRegister.ЗависимостиПравДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияГруппДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияГруппДоступаПоУмолчанию</informationRegisters>

@@ -13,7 +13,7 @@
   <content>Catalog.ФорматыИнтеграцийСистем</content>
   <content>Catalog.ТочкиВходаИнтеграций</content>
   <content>Catalog.ТехнологииИнтеграций</content>
-  <content>Catalog.ТипыТехнологийИнтеграций</content>
+  <content>Catalog.СпособыТехнологийИнтеграций</content>
   <content>Catalog.МетаданныеИнформационныхСистем</content>
   <content>Catalog.МеханизмыТехнологийИнтеграций</content>
   <content>Catalog.ИнформационныеСистемы</content>
@@ -22,5 +22,8 @@
   <content>Catalog.ДополнительныеЗначенияАтрибутов</content>
   <content>ChartOfCharacteristicTypes.Атрибуты</content>
   <content>Catalog.НазначенияАтрибутов</content>
+  <content>CommonPicture.МеханизмыИнтеграций</content>
+  <content>Enum.ПротоколыИнтеграций</content>
+  <content>Catalog.ИнструментыРазработкиФормата</content>
   <parentSubsystem>Subsystem.Функциональные</parentSubsystem>
 </mdclass:Subsystem>

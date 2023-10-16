@@ -9,5 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>CommonModule.Версионирование</content>
   <content>ScheduledJob.ОбновлениеИстории</content>
+  <content>CommonModule.ОбновлениеИнформационнойБазыISEM</content>
   <parentSubsystem>Subsystem.Функциональные</parentSubsystem>
 </mdclass:Subsystem>

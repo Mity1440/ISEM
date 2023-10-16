@@ -17,13 +17,12 @@
   <inputByString>Catalog.ТехнологииИнтеграций.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
-  <help>
-    <pages>
-      <lang>ru</lang>
-    </pages>
-  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Технология интеграции</value>
+  </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
@@ -36,13 +35,13 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="3d036ba3-ce56-4450-8736-493af820f409">
-    <name>Тип</name>
+    <name>Способ</name>
     <synonym>
       <key>ru</key>
-      <value>Тип</value>
+      <value>Способ</value>
     </synonym>
     <type>
-      <types>CatalogRef.ТипыТехнологийИнтеграций</types>
+      <types>CatalogRef.СпособыТехнологийИнтеграций</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

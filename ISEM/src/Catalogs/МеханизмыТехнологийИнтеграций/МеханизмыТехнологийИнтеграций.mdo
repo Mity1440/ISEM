@@ -18,6 +18,10 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Механизм технологии интеграций</value>
+  </objectPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <descriptionLength>150</descriptionLength>
@@ -25,16 +29,9 @@
   <codeAllowedLength>Variable</codeAllowedLength>
   <defaultPresentation>AsDescription</defaultPresentation>
   <predefined>
-    <items id="f6e3d0c2-065c-463b-bfc5-e473aad78f6a">
-      <name>COMObject</name>
-      <description>COMObject</description>
-      <code xsi:type="core:StringValue">
-        <value></value>
-      </code>
-    </items>
-    <items id="c251e734-f506-482b-a891-fdb84dbf2421">
-      <name>HTTPЗапрос</name>
-      <description>HTTPЗАпрос</description>
+    <items id="030755c7-bd54-4834-ba29-c898770281df">
+      <name>БезМеханизма</name>
+      <description>Без механизма</description>
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
@@ -42,13 +39,6 @@
     <items id="28910fc6-1f41-4e10-b15e-fea4967a2a3b">
       <name>DMIL</name>
       <description>Библиотека интеграции с 1С:Документооборотом» (DMIL)</description>
-      <code xsi:type="core:StringValue">
-        <value></value>
-      </code>
-    </items>
-    <items id="c078c0c8-8716-486c-9640-b79daa1d34d1">
-      <name>ВнешниеИсточникиДанных1С</name>
-      <description>Внешние источники данных1С</description>
       <code xsi:type="core:StringValue">
         <value></value>
       </code>
