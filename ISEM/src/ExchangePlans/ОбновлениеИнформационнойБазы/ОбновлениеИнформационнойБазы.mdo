@@ -175,6 +175,9 @@
     <mdObject>Constant.КоличествоПотоковОбновленияДоступа</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.ИнтеграцииСистем</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.СоставыГруппПользователей</mdObject>
   </content>
   <content>

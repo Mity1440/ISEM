@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7711caf8-059d-4861-a304-05c67d7463b0">
+  <producedTypes>
+    <selectionType typeId="a7457dda-6052-4ccb-a892-16ea83c8432c" valueTypeId="27e8dcff-5a0b-490a-b725-2407b67d8727"/>
+    <listType typeId="4979e213-130a-4b90-bae6-a87117fa6ce4" valueTypeId="728d861d-d4ca-45b1-8f83-aa3b9411d514"/>
+    <managerType typeId="53a1edc7-9644-4905-9440-5f098ba51c2b" valueTypeId="5a505cca-bda0-4250-af66-7f63451199e8"/>
+    <recordSetType typeId="c6de2eff-cd8c-4e98-8126-998fa8692e14" valueTypeId="36c23b2a-cb24-4bbc-bc65-ab24b2cc93bf"/>
+    <recordKeyType typeId="ecedfd22-cab7-44fa-aee2-7b4e5f07a578" valueTypeId="a081868e-2737-456a-b770-3c95e8feaa5f"/>
+    <recordType typeId="003f6bdf-51aa-441a-8e0e-dff1e78169bc" valueTypeId="86450be6-d5cf-4c8c-8005-46e2d045bc87"/>
+    <recordManagerType typeId="cbd9d4d8-8220-4ce8-9977-e25b0f1362a0" valueTypeId="5282644f-b62c-445f-9961-98339207eaab"/>
+  </producedTypes>
+  <name>ИнтеграцииСистемДанныеДляСписка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграции систем (Данные для списк</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6d70489b-fe25-4c5e-9695-0b946d03f69b">
+    <name>ДатаПоследнегоИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="9f98924e-381a-43d7-8c9f-224662530dbd">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ecc2a22-b029-4f75-adc7-51f3c6df3685">
+    <name>ПользовательИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвественный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="96decd69-e250-4da9-ba51-e705a4b8606d">
+    <name>Интеграция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интеграция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнтеграцииСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
