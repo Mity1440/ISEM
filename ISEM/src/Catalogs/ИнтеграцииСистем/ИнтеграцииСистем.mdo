@@ -408,7 +408,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="4d988bb7-8432-4403-ba71-25a8a55ce5c7">
+  <forms uuid="4d580100-c9be-4423-abdd-9bc37426d2ad">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
