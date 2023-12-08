@@ -12,6 +12,7 @@
   </picture>
   <content>Catalog.ИнтеграцииСистем</content>
   <content>InformationRegister.ИнтеграцииСистемДанныеДляСписка</content>
+  <content>DataProcessor.НачальнаяСтраницаКонтрольИнтеграций</content>
   <subsystems>НСИ</subsystems>
   <subsystems>Отчеты</subsystems>
 </mdclass:Subsystem>

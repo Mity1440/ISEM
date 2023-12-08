@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hpwa:HomePageWorkArea xmlns:hpwa="http://g5.1c.ru/v8/dt/hpwa">
   <workingAreaTemplate>TwoColumnsEqualWidth</workingAreaTemplate>
-  <columns/>
+  <columns>
+    <items>
+      <form>DataProcessor.НачальнаяСтраницаКонтрольИнтеграций.Form.Форма</form>
+      <height>10</height>
+      <visibility>
+        <common>true</common>
+      </visibility>
+    </items>
+  </columns>
   <columns/>
 </hpwa:HomePageWorkArea>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d0fd15c-a435-4db4-ada1-44437d5d989a">
+  <producedTypes>
+    <objectType typeId="19d0604d-9f11-4529-9abe-06d14980502c" valueTypeId="82437577-41ce-4e59-b1dd-cef5b6c548f0"/>
+    <managerType typeId="a34227b6-5e5d-4003-aa74-7565032d7365" valueTypeId="bb6649cc-9627-451b-8121-17e08860d617"/>
+  </producedTypes>
+  <name>АнализРаботыПользователейСИнтеграциями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ работы пользователей с интеграциями</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализРаботыПользователейСИнтеграциями.Template.Основной</mainDataCompositionSchema>
+  <templates uuid="c81e6e82-7924-4567-91a5-f80cdb361aa1">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -86,7 +86,7 @@
     <name>ПользовательИзменения</name>
     <synonym>
       <key>ru</key>
-      <value>Отвественный</value>
+      <value>Ответственный</value>
     </synonym>
     <type>
       <types>CatalogRef.Пользователи</types>

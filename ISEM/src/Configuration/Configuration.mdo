@@ -662,6 +662,7 @@
   <enums>Enum.ФорматыСохраненияОтчетов</enums>
   <reports>Report.АнализЖурналаРегистрации</reports>
   <reports>Report.АнализПравДоступа</reports>
+  <reports>Report.АнализРаботыПользователейСИнтеграциями</reports>
   <reports>Report.ДлительностьОтложенногоОбновления</reports>
   <reports>Report.ИнтеграцииСистем</reports>
   <reports>Report.ПраваДоступа</reports>
@@ -670,6 +671,7 @@
   <reports>Report.СведенияОПользователях</reports>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>
   <dataProcessors>DataProcessor.НастройкиПользователей</dataProcessors>
+  <dataProcessors>DataProcessor.НачальнаяСтраницаКонтрольИнтеграций</dataProcessors>
   <dataProcessors>DataProcessor.НерекомендуемаяВерсияПлатформы</dataProcessors>
   <dataProcessors>DataProcessor.ОписаниеОбработчиковОбновления</dataProcessors>
   <dataProcessors>DataProcessor.ПанельАдминистрированияБСП</dataProcessors>

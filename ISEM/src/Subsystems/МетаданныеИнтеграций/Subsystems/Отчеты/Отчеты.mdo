@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.ИнтеграцииСистем</content>
+  <content>Report.АнализРаботыПользователейСИнтеграциями</content>
   <parentSubsystem>Subsystem.МетаданныеИнтеграций</parentSubsystem>
 </mdclass:Subsystem>
