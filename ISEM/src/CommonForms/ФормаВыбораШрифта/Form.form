@@ -465,6 +465,7 @@
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoFillCheck>true</autoFillCheck>
   <enabled>true</enabled>
   <verticalScroll>UseIfNecessary</verticalScroll>

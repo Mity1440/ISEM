@@ -223,6 +223,7 @@ See also: &lt;link http://1c.ru/news/info.jsp?id=21537>Example of a virus in an 
     </userVisible>
     <horizontalAlign>Right</horizontalAlign>
   </autoCommandBar>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

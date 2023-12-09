@@ -250,6 +250,7 @@
 					<dcsset:left xsi:type="dcscor:Field">Получатель</dcsset:left>
 					<dcsset:comparisonType>InList</dcsset:comparisonType>
 					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
 						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
 					</dcsset:right>
 					<dcsset:userSettingID>331c8bbd-6b50-47ba-9872-2cc5969aa21c</dcsset:userSettingID>

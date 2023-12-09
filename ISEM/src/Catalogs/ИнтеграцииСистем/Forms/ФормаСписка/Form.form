@@ -867,6 +867,7 @@
   <excludedCommands>CancelSearch</excludedCommands>
   <excludedCommands>Find</excludedCommands>
   <excludedCommands>FindByCurrentValue</excludedCommands>
+  <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
