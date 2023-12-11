@@ -9,7 +9,6 @@
     <key>ru</key>
     <value>Начальная страница контроль интеграций</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.НачальнаяСтраницаКонтрольИнтеграций.Form.Форма</defaultForm>
   <forms uuid="a937360e-a5ee-48e5-8b0f-6388f46ae389">
     <name>Форма</name>

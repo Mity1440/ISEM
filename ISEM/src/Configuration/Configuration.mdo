@@ -661,6 +661,7 @@
   <enums>Enum.ТипыФорматаИнтеграцийСистем</enums>
   <enums>Enum.ФорматыСохраненияОтчетов</enums>
   <reports>Report.АнализЖурналаРегистрации</reports>
+  <reports>Report.АнализИнтеграцийПоКоличеству</reports>
   <reports>Report.АнализПравДоступа</reports>
   <reports>Report.АнализРаботыПользователейСИнтеграциями</reports>
   <reports>Report.ДлительностьОтложенногоОбновления</reports>

@@ -9,5 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.ИнтеграцииСистем</content>
   <content>Report.АнализРаботыПользователейСИнтеграциями</content>
+  <content>Report.АнализИнтеграцийПоКоличеству</content>
   <parentSubsystem>Subsystem.МетаданныеИнтеграций</parentSubsystem>
 </mdclass:Subsystem>

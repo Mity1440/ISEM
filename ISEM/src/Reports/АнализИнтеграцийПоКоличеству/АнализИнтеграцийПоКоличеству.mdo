@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="282b661a-a6db-435e-b768-a06416a97208">
+  <producedTypes>
+    <objectType typeId="0993c4c9-a1b2-49c7-b833-cebb858034e0" valueTypeId="7d2886f5-001e-4a3f-a0a8-955fed3f3e37"/>
+    <managerType typeId="a71ee881-8295-4546-b2ca-bdf6584f1d92" valueTypeId="3cdb72f7-0cbb-4d01-a510-81cbc041c682"/>
+  </producedTypes>
+  <name>АнализИнтеграцийПоКоличеству</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ интеграций по количеству</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализИнтеграцийПоКоличеству.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="092c5e17-33bb-4fc4-8082-549fe123a928">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

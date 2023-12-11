@@ -81,6 +81,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
   </resources>
   <resources uuid="7ecc2a22-b029-4f75-adc7-51f3c6df3685">
     <name>ПользовательИзменения</name>
