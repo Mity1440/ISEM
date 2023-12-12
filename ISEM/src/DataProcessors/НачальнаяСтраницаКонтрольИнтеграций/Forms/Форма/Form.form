@@ -114,6 +114,10 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+            <handlers>
+              <event>DetailProcessing</event>
+              <name>ТабДокПоследниеИзмененныеИнтеграцииОбработкаРасшифровки</name>
+            </handlers>
             <width>50</width>
             <autoMaxWidth>true</autoMaxWidth>
             <height>10</height>
@@ -277,6 +281,10 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:SpreadSheetDocFieldExtInfo">
+            <handlers>
+              <event>DetailProcessing</event>
+              <name>ТабДокНовыеИнтеграцииОбработкаРасшифровки</name>
+            </handlers>
             <width>50</width>
             <autoMaxWidth>true</autoMaxWidth>
             <height>10</height>
@@ -872,6 +880,42 @@
     <id>8</id>
     <valueType>
       <types>CatalogRef.ТехнологииИнтеграций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДанныеРасшифровкиПоследниеИзмененныеИнтеграцииСтрока</name>
+    <title>
+      <key>ru</key>
+      <value>Данные расшифровки последние измененные интеграции строка</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДанныеРасшифровкиНовыеИнтеграцииСтрока</name>
+    <title>
+      <key>ru</key>
+      <value>Данные расшифровки новые интеграции строка</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
     </valueType>
     <view>
       <common>true</common>
